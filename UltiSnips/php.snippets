@@ -1,0 +1,43 @@
+snippet html "Snippet de HTML5"
+<!DOCTYPE html>
+<html lang="${1:es}">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>${2:`substitute(vim_snippets#Filename('', 'Título de página'), '^.', '\u&', '')`}</title>
+	</head>
+	<body>
+		${0}
+	</body>
+</html>
+endsnippet
+
+snippet link "Link reducido"
+<link rel="${1}" href="${2}">
+endsnippet
+
+snippet script
+<script type="text/javascript" src="${1}"></script>
+endsnippet
+
+snippet t "Tag genérico" b
+<${1:div}>${0}</${1/(\w+).*/$1/}>
+endsnippet
+
+snippet tt "Tag genérico con contenido" b
+<${1:div}>
+	${0}
+</${1/(\w+).*/$1/}>
+endsnippet
+
+snippet input
+<input type="${1:text}" name="${2}" id="${3:$2}" value="${4}">
+endsnippet
+
+snippet img
+<img src="${1}" alt="${2:$1}">
+endsnippet
+
+snippet a
+<a href="${1}" target="${2:_self}">${0:$1}</a>
+endsnippet

@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='scp://mafernandez@miem.local@10.100.10.20//srv/'
+let g:netrw_dirhist_9='scp://ben@192.168.73.169//var/www/html/BEN.2015/'
+let g:netrw_dirhist_8='/srv/http'
+let g:netrw_dirhist_7='/srv/http/appclient'
+let g:netrw_dirhist_6='/srv/http/appclient/es2016/css'
+let g:netrw_dirhist_5='/srv/http/appclient/es2016'
+let g:netrw_dirhist_4='/srv/http/appclient/es2016/assets'
+let g:netrw_dirhist_3='/srv/http/appclient/es2016'
+let g:netrw_dirhist_2='/home/rammserker/.config/nvim'
+let g:netrw_dirhist_1='/home/rammserker/Desarrollo/MIEM/databases/WDI'
