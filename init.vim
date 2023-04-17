@@ -124,6 +124,11 @@ com! FormatXML :%!python3 -c "import xml.dom.minidom, sys; print(xml.dom.minidom
 " Plugins
 " --------------------------------------------
 
+if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
+    silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    autocmd VimEnter * PlugInstall
+endif
+
 call plug#begin('~/.local/share/nvim/plugged')
 
 source ~/.config/nvim/plugins/escritura.vim
